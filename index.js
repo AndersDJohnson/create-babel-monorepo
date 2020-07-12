@@ -25,7 +25,7 @@ createMonorepo({
       keywords: ["create-babel-monorepo"],
       scripts: {
         start: "node .",
-        build: "babel src --out-dir dist",
+        build: "babel --root-mode upward src --out-dir dist",
         "build:watch": "npm run build -- --watch",
       },
     },
