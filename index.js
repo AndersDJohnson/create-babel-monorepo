@@ -2,7 +2,7 @@
 
 const createMonorepo = require("base-create-monorepo");
 
-createMonorepo("babel-monorepo", {
+createMonorepo({
   package: {
     keywords: ["create-babel-monorepo"],
     scripts: {
