@@ -6,7 +6,7 @@ createMonorepo({
   package: {
     keywords: ["create-babel-monorepo"],
     scripts: {
-      start: "lerna run start",
+      start: "lerna run --parallel start",
       build: "lerna run build",
       "build:watch": "lerna run --parallel build:watch",
     },
