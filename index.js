@@ -11,15 +11,15 @@ createMonorepo({
       "build:watch": "lerna run --parallel build:watch",
     },
   },
+  devDependencies: [
+    "@babel/core",
+    "@babel/cli",
+    "@babel/node",
+    "@babel/preset-env",
+    "@babel/plugin-transform-runtime",
+  ],
   eachPackage: {
     dependencies: ["@babel/runtime"],
-    devDependencies: [
-      "@babel/core",
-      "@babel/cli",
-      "@babel/node",
-      "@babel/preset-env",
-      "@babel/plugin-transform-runtime",
-    ],
     package: {
       main: "dist/index.js",
       keywords: ["create-babel-monorepo"],
