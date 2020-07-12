@@ -25,11 +25,11 @@ createMonorepo({
       keywords: ["create-babel-monorepo"],
       scripts: {
         start: "node .",
-        build: "babel -x .ts,.tsx src --out-dir dist",
+        build: "babel src --out-dir dist",
         "build:watch": "npm run build -- --watch",
       },
     },
-    files: ["src/index.ts"],
+    files: ["src/index.js"],
   },
   files: [
     {
