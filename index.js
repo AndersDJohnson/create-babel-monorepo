@@ -4,6 +4,7 @@ const createMonorepo = require("base-create-monorepo");
 
 createMonorepo({
   package: {
+    main: undefined,
     keywords: ["create-babel-monorepo"],
     scripts: {
       start: "lerna run start",
