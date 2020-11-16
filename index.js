@@ -22,6 +22,7 @@ createMonorepo({
     dependencies: ["@babel/runtime"],
     package: {
       main: "dist/index.js",
+      files: ["dist"],
       keywords: ["create-babel-monorepo"],
       scripts: {
         start: "node .",
